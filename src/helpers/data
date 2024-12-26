@@ -1,0 +1,642 @@
+[
+    {
+        "id": 2091,
+        "question": "What is Laravel's Pipeline pattern used for?",
+        "description": "Understanding Laravel's request processing pattern.",
+        "answers": {
+            "answer_a": "To handle data pipes",
+            "answer_b": "To pass data through a series of operations in a fluent way",
+            "answer_c": "To manage routing pipelines",
+            "answer_d": "To handle stream processing",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "The Pipeline pattern in Laravel allows you to pass an object through a series of stages or operations, with each stage performing some action on the object. This pattern is used internally by Laravel for middleware and can be used for implementing custom processing workflows.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Laravel"
+            }
+        ],
+        "category": "Laravel",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 3857,
+        "question": "What is the maximum number of widgets you can add to a WordPress sidebar?",
+        "description": "Understanding widget usage in WordPress.",
+        "answers": {
+            "answer_a": "Unlimited",
+            "answer_b": "10",
+            "answer_c": "5",
+            "answer_d": "15",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "There is no fixed limit to the number of widgets you can add to a sidebar in WordPress.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "WordPress"
+            }
+        ],
+        "category": "WordPress",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 6750,
+        "question": "In your microservices architecture, how should you handle message ordering requirements across different service boundaries?",
+        "description": "Implementing message ordering in distributed systems.",
+        "answers": {
+            "answer_a": "Single partition topics",
+            "answer_b": "Sequence numbers with causal consistency",
+            "answer_c": "Global timestamp ordering",
+            "answer_d": "Synchronous processing",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Using sequence numbers with causal consistency allows maintaining necessary ordering guarantees across service boundaries while enabling scalability and parallel processing where ordering isn't required.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Apache Kafka"
+            }
+        ],
+        "category": "Apache Kafka",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 4238,
+        "question": "Your Next.js app needs to implement a collaborative whiteboard. What's the most efficient approach?",
+        "description": "Understanding real-time collaboration features. (Hard)",
+        "answers": {
+            "answer_a": "Regular canvas",
+            "answer_b": "WebSocket with CRDT and canvas optimization",
+            "answer_c": "SVG elements",
+            "answer_d": "Image updates",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Using WebSocket with CRDT and canvas optimization provides efficient real-time collaboration for whiteboard features while handling concurrent edits and maintaining performance.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Next.js"
+            }
+        ],
+        "category": "Next.js",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 5601,
+        "question": "How do you use Vue Router to scroll to a specific position on navigation?",
+        "description": "Exploring how to control scroll behavior when navigating routes.",
+        "answers": {
+            "answer_a": "Use 'v-bind:scroll'",
+            "answer_b": "Add a 'scrollBehavior' function to the router configuration",
+            "answer_c": "Use 'this.$router.scrollTo()'",
+            "answer_d": "Use 'v-show' on the target component",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "To control scroll behavior during navigation, you add a 'scrollBehavior' function to the router configuration.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "VueJS"
+            }
+        ],
+        "category": "VueJS",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2391,
+        "question": "Which configuration best improves performance of prepared statement execution?",
+        "description": "Understanding prepared statement optimization.",
+        "answers": {
+            "answer_a": "Increase max_prepared_transactions",
+            "answer_b": "Configure plan caching parameters",
+            "answer_c": "Disable prepared statements",
+            "answer_d": "Use generic plans only",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Configuring plan caching parameters optimizes prepared statement performance by balancing generic and custom plan usage based on execution frequency and parameter selectivity.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Postgres"
+            }
+        ],
+        "category": "Postgres",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 6614,
+        "question": "How can you control the direction of a slide transition in Vue based on the current route?",
+        "description": "Learning how to create dynamic slide transitions between routes.",
+        "answers": {
+            "answer_a": "Bind the transition name dynamically using the current route information to control the slide direction",
+            "answer_b": "Use a static slide animation",
+            "answer_c": "Use 'v-if' to create multiple slides",
+            "answer_d": "Disable animations for routes",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "By binding the transition name dynamically to the current route information, you can control the slide direction for transitions between different routes.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "VueJS"
+            }
+        ],
+        "category": "VueJS",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4943,
+        "question": "How can you prevent a child process from being terminated when the parent process exits?",
+        "description": "Managing child process lifetime.",
+        "answers": {
+            "answer_a": "Set the 'detached' option to true",
+            "answer_b": "Use 'child.preventExit()'",
+            "answer_c": "Call 'child.detach()' after creation",
+            "answer_d": "Child processes cannot be prevented from termination",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Setting the 'detached' option to true allows the child process to run independently of the parent process.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "nodeJS"
+            }
+        ],
+        "category": "NodeJs",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 5972,
+        "question": "How do you create a deep watcher for a reactive object, and when should it be used with caution?",
+        "description": "Understanding how to create and use deep watchers effectively.",
+        "answers": {
+            "answer_a": "Use 'watch()' with the 'deep: true' option, but use it cautiously for large objects to avoid performance issues",
+            "answer_b": "Use 'toRefs()' on all properties",
+            "answer_c": "Use 'computed()' for deep watching",
+            "answer_d": "Deep watchers are always preferred",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Deep watchers can be created using 'watch()' with 'deep: true', but they should be used cautiously, as tracking all changes in large objects can impact performance.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "VueJS"
+            }
+        ],
+        "category": "VueJS",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 2643,
+        "question": "How can you ensure that a Celery task is only executed once across a cluster of workers?",
+        "description": "Ensuring a task is executed only once across multiple workers helps prevent duplicate processing in a distributed setup.",
+        "answers": {
+            "answer_a": "Use a distributed locking mechanism like Redis",
+            "answer_b": "Set the concurrency to 1",
+            "answer_c": "Use the retry() method",
+            "answer_d": "Use a task delay",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "A distributed locking mechanism, such as Redis, can be used to ensure that a Celery task is executed only once across a cluster of workers, preventing duplication.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Django"
+            }
+        ],
+        "category": "Django",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 2134,
+        "question": "What is Laravel's Model Factories feature used for?",
+        "description": "Understanding Laravel's testing tools.",
+        "answers": {
+            "answer_a": "To create model instances",
+            "answer_b": "To generate test data using predefined blueprints",
+            "answer_c": "To handle model creation",
+            "answer_d": "To manage database factories",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Model Factories provide a convenient way to generate large amounts of test data for your database using predefined blueprints. They are particularly useful in testing and seeding databases with realistic test data.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Laravel"
+            }
+        ],
+        "category": "Laravel",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 4197,
+        "question": "How can you prevent a WordPress site from being indexed by search engines?",
+        "description": "Preventing search engine indexing in WordPress.",
+        "answers": {
+            "answer_a": "By enabling the 'Discourage search engines from indexing this site' option in the WordPress settings.",
+            "answer_b": "By adding a `noindex` directive in the `robots.txt` file.",
+            "answer_c": "By adding the `meta` tag with `noindex` in the theme's header.",
+            "answer_d": "By using the 'Force SSL' plugin to block crawlers.",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "You can prevent a WordPress site from being indexed by search engines by enabling the 'Discourage search engines from indexing this site' option under the 'Reading' settings in WordPress.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "WordPress"
+            }
+        ],
+        "category": "WordPress",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 2871,
+        "question": "How do you limit the number of records returned by a query in Django ORM?",
+        "description": "Limiting the number of records is useful when you want to restrict the result set, such as fetching the top 5 entries.",
+        "answers": {
+            "answer_a": "Use Python list slicing on the queryset",
+            "answer_b": "Use the limit() method",
+            "answer_c": "Use the count() method",
+            "answer_d": "Use the get() method",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "To limit the number of records, use Python list slicing on the queryset, such as queryset[:5] to get the first 5 records.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Django"
+            }
+        ],
+        "category": "Django",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1623,
+        "question": "What happens when you call setState with identical state values in React?",
+        "description": "Understanding React's state update behavior and optimization strategies.",
+        "answers": {
+            "answer_a": "React will always re-render the component regardless of the values",
+            "answer_b": "The component will throw an error for redundant updates",
+            "answer_c": "React will skip the re-render if the new state is identical to the previous state (using Object.is comparison)",
+            "answer_d": "The state will be reset to its initial value",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "React uses Object.is comparison to determine if the new state is different from the previous state. If they are identical, React will skip the re-render process entirely, which is an important performance optimization feature.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "React"
+            }
+        ],
+        "category": "React",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3296,
+        "question": "Which command is used to add a user to a group in Ubuntu?",
+        "description": "Adding a user to a group allows the user to inherit permissions associated with that group.",
+        "answers": {
+            "answer_a": "Use 'sudo usermod -aG group_name username'",
+            "answer_b": "Run 'addgroup user group_name'",
+            "answer_c": "Type 'groupadd user'",
+            "answer_d": "Use 'groupmod user group_name'",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "To add a user to a group, use 'sudo usermod -aG group_name username'.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Ubuntu"
+            }
+        ],
+        "category": "Linux",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 3562,
+        "question": "How do you change the default text editor for command-line operations in Ubuntu?",
+        "description": "Changing the default text editor allows you to set your preferred editor for editing configuration files.",
+        "answers": {
+            "answer_a": "Use 'sudo update-alternatives --config editor'",
+            "answer_b": "Run 'set-default-editor'",
+            "answer_c": "Type 'change-text-editor'",
+            "answer_d": "Use 'editor-config set'",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "To change the default text editor, use 'update-alternatives' and select the preferred editor.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Ubuntu"
+            }
+        ],
+        "category": "Docker",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 1465,
+        "question": "What is the main advantage of using closures over simple functions in Python?",
+        "description": "Closures allow better encapsulation, which is useful in various advanced programming scenarios.",
+        "answers": {
+            "answer_a": "They improve the function's performance",
+            "answer_b": "They allow retaining state between function calls",
+            "answer_c": "They make the function asynchronous",
+            "answer_d": "They are faster than normal functions",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Closures retain the state from their enclosing environment, making them useful for maintaining state information.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Python"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 3086,
+        "question": "How can you use the cPanel CLI to reset the DNS configuration for all accounts?",
+        "description": "Resetting the DNS configuration can be necessary after making changes to nameservers or network settings.",
+        "answers": {
+            "answer_a": "/usr/local/cpanel/scripts/resetdnsconfig --all",
+            "answer_b": "/scripts/dnsreset --global",
+            "answer_c": "/usr/local/cpanel/bin/reconfig_dns",
+            "answer_d": "/scripts/dns_reset_all",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "The /usr/local/cpanel/scripts/resetdnsconfig --all command is used to reset the DNS configuration for all accounts via the CLI.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "cPanel"
+            }
+        ],
+        "category": "cPanel",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 2615,
+        "question": "Which of the following is a common use case for Celery in Django projects?",
+        "description": "Celery is often used to handle specific types of tasks that should not be processed synchronously.",
+        "answers": {
+            "answer_a": "Handling HTTP requests",
+            "answer_b": "Sending emails asynchronously",
+            "answer_c": "Serving static files",
+            "answer_d": "Authenticating users",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "Celery is commonly used for sending emails asynchronously, as email sending can be time-consuming and should not block user requests.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Django"
+            }
+        ],
+        "category": "Django",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 6307,
+        "question": "How do you use a directive to add a click-outside behavior to an element in Vue?",
+        "description": "Understanding how to create directives to manage interactions outside of a component.",
+        "answers": {
+            "answer_a": "Create a custom directive that listens to the 'click' event on the document and checks if the target is outside the element",
+            "answer_b": "Use 'v-for' to handle outside clicks",
+            "answer_c": "Wrap the element in 'v-if' to detect clicks",
+            "answer_d": "Vue cannot detect outside clicks",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": "A custom directive that listens for clicks on the document and checks if the target element is outside the bound element allows for click-outside behavior.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "VueJS"
+            }
+        ],
+        "category": "VueJS",
+        "difficulty": "Medium"
+    }
+]

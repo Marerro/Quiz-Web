@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-gray-600 text-4xl p-4;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 5px 5px 10px red;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-300;
+  }
+}
+
+@layer components {
+  .card {
+    @apply text-left bg-slate-400;
+  }
+}
+
+.Karla {
+  font-family: "Karla", serif;
+}
+
+.Inter {
+  font-family: "Inter", serif;
+}
