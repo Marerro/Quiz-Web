@@ -8,12 +8,32 @@ function Home() {
     const [difficulty, setDifficulty] = useState("");
     const [filteredQuestions, setFilteredQuestions] = useState([]);
 
+    // Function makes answers from object to array and add true answer information
+    const AnswersFromObject = (question) => {
+        const answersArray = [];
+        for (const key in question.answers) {
+            if (question.answers[key] !== null) {
+                answersArray.push({
+                    id:key,
+                    answer: question.answers[key],
+                    isCorrect: question.correct_answers[`${key}_correct`] === "true",
+                });
+            }
+        }
+        return answersArray;
+    }
+
     // Get all questions
     const getAllQuestions = async () => {
         const response = await getAll(); 
-        console.log(response);
-        setQuestions(response);
+        const questionsWithAnswers = response.map((question) => ({
+            ...question,
+            answersArray: AnswersFromObject(question),
+        }))
+        setQuestions(questionsWithAnswers);
     };
+
+    console.log(questions)
 
     // Filter by what user select
     const checkSelect = () => {
