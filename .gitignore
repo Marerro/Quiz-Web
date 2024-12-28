@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-get.js
+
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +23,5 @@ get.js
 *.njsproj
 *.sln
 *.sw?
+
+src/helpers/get.js
