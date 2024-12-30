@@ -6,7 +6,6 @@ function Home() {
   const [questions, setQuestions] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState("");
   const [difficulty, setDifficulty] = useState("");
-  const [filteredQuestions, setFilteredQuestions] = useState([]);
 
   // Function makes answers from object to array and add true answer information
   const AnswersFromObject = (question) => {
@@ -33,26 +32,9 @@ function Home() {
     setQuestions(questionsWithAnswers);
   };
 
-  // Filter by what user select
-  const checkSelect = () => {
-    if (selectedCategories && difficulty) {
-      const filtered = questions.filter(
-        (question) =>
-          question.category.trim().toLowerCase() ===
-            selectedCategories.trim().toLowerCase() &&
-          question.difficulty.trim().toLowerCase() === difficulty.trim().toLowerCase()
-      );
-      setFilteredQuestions(filtered);
-    }
-  };
-
   useEffect(() => {
     getAllQuestions();
   }, []);
-
-  useEffect(() => {
-    checkSelect();
-  }, [selectedCategories, difficulty, questions]);
 
   return (
     <div>
@@ -74,13 +56,11 @@ function Home() {
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           >
             <option value="">Select Difficulty</option>
-            {[...new Set(questions.map((q) => q.difficulty || "Unknown"))].map(
-              (difficulty, index) => (
-                <option key={index} value={difficulty}>
-                  {difficulty}
-                </option>
-              )
-            )}
+            {questions.map((q, index) => (
+              <option key={index} value={q.difficulty || "Unknown"}>
+                {q.difficulty || "Unknown"}
+              </option>
+            ))}
           </select>
         </form>
       </div>
@@ -94,11 +74,9 @@ function Home() {
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           >
             <option value="">Select Category</option>
-            {[
-              ...new Set(questions.map((q) => q.category || "Uncategorized")),
-            ].map((category, index) => (
-              <option key={index} value={category}>
-                {category}
+            {questions.map((q, index) => (
+              <option key={index} value={q.category || "Uncategorized"}>
+                {q.category || "Uncategorized"}
               </option>
             ))}
           </select>
@@ -107,7 +85,7 @@ function Home() {
 
       {/* Questions when press "Start Quiz" */}
       <div className="text-center">
-        <Link to="/question" state={{ questions: filteredQuestions }}>
+        <Link to="/question" state={{ questions: questions }}>
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
