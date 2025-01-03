@@ -56,10 +56,10 @@ function Home() {
     return (
         <div>
             <div>
-                <h1 className="text-[#293264] Karla font-bold leading-normal text-center">
+                <h1 className="text-[#293264] Karla font-bold leading-normal text-center text-[31.25px]">
                     Quizzical
                 </h1>
-                <p className="Inter text-[#293264] text-center not-italic font-normal leading-normal">
+                <p className="Inter text-[#293264] text-center not-italic font-normal leading-normal mb-5">
                     Some description if needed
                 </p>
             </div>
@@ -103,7 +103,7 @@ function Home() {
                 <Link to="/question" state={{ questions: questions }}>
                     <button
                         type="button"
-                        className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        className="text-white w-[193px] h-[52px] bg-[#4D5B9E] hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-[16px] px-5 py-2.5 text-center me-2 mb-2"
                     >
                         Start Quiz
                     </button>
